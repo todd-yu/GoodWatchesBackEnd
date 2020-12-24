@@ -43,7 +43,7 @@ func handler(writer http.ResponseWriter, request *http.Request) {
 func main() {
 	// database := loadDatabase()
 	http.HandleFunc("/movies", handler)
-	fmt.Println("Listening on port 8080...")
-	err := http.ListenAndServe(":8080", nil)
+	fmt.Println("Listening on port 3000...")
+	err := http.ListenAndServe(":3000", nil)
 	log.Fatal(err)
 }
